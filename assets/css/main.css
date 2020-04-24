@@ -115,6 +115,10 @@ input, select, textarea {
 		font-family: "Trebuchet", Helvetica, sans-serif;
 	}
 
+	#roboto-font {
+		font-family: "Roboto", Helvetica, sans-serif;
+	} 
+
 	a {
 		-moz-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -126,7 +130,7 @@ input, select, textarea {
 	}
 
 		a:hover {
-			color: #e44c65 !important;
+			color: #A9A9A9 !important;
 			border-bottom-color: transparent;
 		}
 
@@ -3904,7 +3908,7 @@ input, select, textarea {
 			}
 
 				#titleBar .title {
-					color: #ffffff;
+					color: #ffffff; /* anchor bar */
 					display: block;
 					font-weight: 300;
 					height: 44px;

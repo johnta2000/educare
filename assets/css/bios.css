@@ -1,7 +1,6 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
 @import url("https://fonts.googleapis.com/css?family=Muli");
-@import url("https://fonts.googleapis.com/css?family=Trebuchet");
 
 
 /* Wrapper */
@@ -651,7 +650,7 @@ a.special:not(.button) {
 			}
 
 			a.special:not(.button):active:before {
-				background-color: rgba(255, 255, 255, 0.075);
+				background-color: #A8D0E6;
 			}
 
 /* special header */

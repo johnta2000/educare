@@ -82,7 +82,7 @@
 	}
 
 	.wrapper {
-		background-color:#08102A; /* background color of bios page*/
+		background-color: rgba(23, 24, 32, 0.95); /* background color of bios */
 		position: relative;
 	}
 
@@ -429,7 +429,7 @@
 
 		.features article {
 			padding: 1.75em 1.75em 0.1em 1.75em ;
-			background-color: #112155; /* background color for each block in bios grid */
+			background-color: #4A4E68; /* color for each block in grid */
 			border-radius: 5px;
 			margin: 1.5em 3em 1.5em 0;
 			width: calc(32% - 1.5em);

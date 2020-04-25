@@ -173,7 +173,7 @@ input, select, textarea {
 
 	h1 {
 		font-family: "Nunito", Helvetica, sans-serif;
-		font-size: 4em;
+		font-size: 3em;
 		line-height: 1.5em;
 		letter-spacing: -0.025em;
 		margin: 0 0 0 0;
@@ -3802,7 +3802,7 @@ input, select, textarea {
 			}
 
 			h1 {
-				font-size: 2.5em;
+				font-size: 2.25em;
 			}
 
 			h2 {

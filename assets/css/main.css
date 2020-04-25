@@ -1,6 +1,7 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
 @import url("https://fonts.googleapis.com/css?family=Muli");
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 
@@ -102,9 +103,9 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: rgba(255, 255, 255, 0.75);
-		font-family: "Roboto", Helvetica, sans-serif;
+		font-family: "Nunito", Helvetica, sans-serif;
 		font-size: 15pt;
-		font-weight: 100;
+		font-weight: 250;
 		line-height: 1.75em;
 	}
 
@@ -3156,7 +3157,7 @@ input, select, textarea {
 		}
 
 		.spotlight.style1 .content {
-			border-color: #24305E;
+			border-color: #24305E; /* banner 1 */
 		}
 
 		.spotlight.style2 .content {
@@ -3469,7 +3470,7 @@ input, select, textarea {
 	#banner {
 		background-attachment: fixed;
 
-		background-color: #374785; /* gradient transition */
+		background-color: #023158; /* top banner */
 
 		background-position: center center;
 		background-size: cover;

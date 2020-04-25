@@ -117,6 +117,15 @@ input, select, textarea {
 		font-family: "Open Sans", Helvetica, sans-serif;
 	}
 
+	#nunito-font {
+		font-family: "Nunito", Helvetica, sans-serif;
+	}
+
+	#nunito-font-thin {
+		font-family: "Nunito", Helvetica, sans-serif;
+		font-weight: 1;
+	}
+
 	#roboto-font {
 		font-family: "Roboto", Helvetica, sans-serif;
 	} 
@@ -3157,15 +3166,15 @@ input, select, textarea {
 		}
 
 		.spotlight.style1 .content {
-			border-color: #24305E; /* banner 1 */
+			border-color: #AEEAF2; /* banner 1 */
 		}
 
 		.spotlight.style2 .content {
-			border-color: #374785;
+			border-color: #AEEAF2;
 		}
 
 		.spotlight.style3 .content {
-			border-color: #39c088;
+			border-color: #AEEAF2;
 		}
 
 		.spotlight.inactive .content {
@@ -3219,7 +3228,7 @@ input, select, textarea {
 	}
 
 		.wrapper.style2 {
-			background: #374785;
+			background: #023158;
 		}
 
 			.wrapper.style2 input[type="text"]:focus,
@@ -3763,8 +3772,12 @@ input, select, textarea {
 
 /* Small */
 
-	#navPanel, #titleBar {
+	#navPanel {
 		display: none;
+	}
+
+	#titleBar {
+
 	}
 
 	@media screen and (max-width: 736px) {
@@ -3890,10 +3903,12 @@ input, select, textarea {
 			}
 
 			#titleBar {
+				/*
 				-moz-backface-visibility: hidden;
 				-webkit-backface-visibility: hidden;
 				-ms-backface-visibility: hidden;
 				backface-visibility: hidden;
+				*/
 				-moz-transition: -moz-transform 0.5s ease;
 				-webkit-transition: -webkit-transform 0.5s ease;
 				-ms-transition: -ms-transform 0.5s ease;

@@ -2667,7 +2667,7 @@ input, select, textarea {
 /* Custom Button */
 
 #custom-button {
-	margin-left: calc(50% - 133px - 18px);
+	margin-left: calc(50% - 133px - 36px);
 }
 
 /* Actions */

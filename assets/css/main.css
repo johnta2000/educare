@@ -2664,6 +2664,12 @@ input, select, textarea {
 					font-size: 2em;
 				}
 
+/* Custom Button */
+
+#custom-button {
+	margin-left: calc(50% - 133px - 18px);
+}
+
 /* Actions */
 
 	ul.actions {
@@ -4125,6 +4131,12 @@ input, select, textarea {
 
 			.spotlight .content {
 				padding: 3em 1.25em 1em 1.25em !important;
+			}
+
+		/* Custom button */
+
+			#custom-button {
+				margin-left: 0;
 			}
 
 		/* Wrapper */

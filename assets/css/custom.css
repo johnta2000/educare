@@ -7,10 +7,64 @@
 
 }
 
+.home-col{
+  display: flex; 
+  flex-direction: column; 
+  margin: 2rem;
+
+  flex-basis: 400px;
+  width: 100%;
+
+}
+
+.home-item{
+
+  display: flex;
+  background-color: #23242B;
+
+  flex-direction: column;
+
+  margin-bottom: 3rem;
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+
+
+}
+
+
 .portfolio-img {
     width: 400px;
     transition: .25s all;
 
+}
+
+@media screen and (max-width: 1400px) {
+  .portfolio-img {
+    width: 300px; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .portfolio-img {
+    width: 250px; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .portfolio-img {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+
+  .home-col{
+    margin: 10px
+  }
+
+  .home-item{
+    margin-bottom: 10px
+  }
 }
 
 .portfolio-img:hover {

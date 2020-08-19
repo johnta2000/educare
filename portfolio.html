@@ -1,0 +1,250 @@
+<!DOCTYPE HTML>
+<!--
+	Code implemented and modified by John Ta (https://john-ta.com)
+
+	Design & Scaling: HTML5 UP
+	html5up.net | @ajlkn
+
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Penn EduCare</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <link rel="stylesheet" href="assets/css/bios.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <!-- 32x32 & 16x16 favicon support -->
+    <link rel="icon" type="image/png" href="favicon32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon16.png" sizes="16x16" />
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131825248-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-131825248-2');
+    </script>
+
+
+
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload landing">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header">
+
+            <!-- Nav bar -->
+            <a href="index.html" style="  border-bottom:none;">
+                <img src="images/educarelogo-notext.png" style="padding:1rem; max-width: 5rem" alt="Penn Educare" />
+            </a>
+
+            <nav id="nav">
+
+                <ul>
+                    <!-- <li><a href="#header">To top</a></li> -->
+
+                    <li><a href="mission.html">Mission statement</a></li>
+                    <li><a href="portfolio.html">Our Work</a></li>
+                    <li><a href="#three">Our partners</a></li>
+                    <li><a href="#six">Exec board</a></li>
+                    <li><a href="#five">Join the team</a></li>
+
+
+
+                </ul>
+            </nav>
+
+
+        </header>
+
+
+        <!-- Top Banner -->
+        <!-- i apologize in advanced for the spaghetti code lol, i'll pretty it up once we get this more finalized -->
+        <section id="banner" >
+
+            <div class="content" >
+                <h1 style="font-weight: 1000; text-align: center;" id="nunito-font">Our Work</h1>
+
+                <div style="display: flex; flex-direction: row; flex-wrap: wrap;  justify-content: center">
+
+                    <div class="portfolio-col">
+
+                        <div class="portfolio-item" 
+                        onclick="openModal('Example Infographic', 'John Doe', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget odio ac ex volutpat laoreet in at urna. Integer vitae efficitur tortor. In non leo urna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque vestibulum eros libero, ut fermentum massa maximus sed. Praesent eu feugiat ex. Donec sapien lacus, congue volutpat bibendum nec, placerat ac purus. Curabitur sed libero vel dui finibus bibendum sit amet vitae lorem.', 'https://www.easel.ly/blog/wp-content/uploads/2016/07/history-of-money-infographic-template.png')"
+                        >
+                            
+                            <img src="https://www.easel.ly/blog/wp-content/uploads/2016/07/history-of-money-infographic-template.png"
+                                class="portfolio-img">
+
+
+                            </p>
+
+
+                        </div>
+                        <div class="portfolio-item"> <img src="https://i.imgur.com/bktsc88.png" class="portfolio-img"
+                            onclick="openModal('Example Infographic 2', 'Jane Doe', 'Heres another lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget odio ac ex volutpat laoreet in at urna. Integer vitae efficitur tortor. In non leo urna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque vestibulum eros libero, ut fermentum massa maximus sed. Praesent eu feugiat ex. Donec sapien lacus, congue volutpat bibendum nec, placerat ac purus. Curabitur sed libero vel dui finibus bibendum sit amet vitae lorem.', 'https://i.imgur.com/bktsc88.png')"
+
+                            >
+
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-col">
+
+                        <div class="portfolio-item"> <img src="https://i.imgur.com/bktsc88.png" class="portfolio-img">
+
+                        </div>
+                        <div class="portfolio-item"> <img src="https://i.imgur.com/cKyMZeE.png" class="portfolio-img">
+
+                        </div>
+
+                    </div>
+                    <div class="portfolio-col">
+
+                        <div class="portfolio-item"> <img src="https://piktochart.com/wp-content/uploads/2017/12/process-infographic2x.jpg"
+                                class="portfolio-img">
+
+                        </div>
+                        <div class="portfolio-item"> <img src="https://images-na.ssl-images-amazon.com/images/I/81ucOboCEPL.jpg"
+                                class="portfolio-img">
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons">
+
+                <li><a href="https://instagram.com/penneducare" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+
+                <li><a href="https://www.linkedin.com/company/penneducare/" class="icon brands alt fa-linkedin-in"><span
+                            class="label">LinkedIn</span></a></li>
+
+                <li><a href="mailto:penneducare@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <li><a href="https://john-ta.com"> &copy; John Ta. All rights reserved.</a></li>
+
+                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
+        </footer>
+
+    </div>
+
+
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2 id="modal-title" class="modal-text"></h2>
+            </div>
+            <div class="modal-body">
+                <div style="display: flex; flex-direction: row; flex-wrap: wrap;  justify-content: center">
+                    <img id="modal-image"  class="modal-img"/>
+
+                    <div style="display: flex; flex-direction: column;">
+                        <p style="width: 400px; max-width: 40vw; padding-left: 1rem;" class="modal-text" id="description-text">
+
+                        </p>
+
+                        <i style="width: 100%; padding-left: 1rem" class="modal-text" id="author-text">
+                        </i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Scripts -->
+
+    <script>
+        var modal = document.getElementById("myModal");
+
+
+        var title = document.getElementById("modal-title");
+
+        var author = document.getElementById("author-text");
+
+        var description = document.getElementById("description-text");
+
+
+        var image = document.getElementById('modal-image');
+        // Get the button that opens the modal
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        function openModal(titleText,  authorText, descriptionText, link) {
+            var modal = document.getElementById("myModal");
+
+            title.textContent = titleText;
+            author.textContent = 'Created by ' + authorText;
+            description.textContent = descriptionText;
+            image.src = link;
+
+            modal.style.display = "block";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+    </script>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+
+
+</html>

@@ -20,7 +20,7 @@
 .home-item{
 
   display: flex;
-  background-color: #23242B;
+  background-color: #023158;
 
   flex-direction: column;
 
@@ -55,14 +55,42 @@
 
 @media screen and (max-width: 940px) {
   .portfolio-img {
-    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    width: 200px; /* The width is 100%, when the viewport is 800px or smaller */
   }
 
-  .home-col{
+  .home-col, .portfolio-col{
     margin: 10px
   }
 
-  .home-item{
+  .home-item, .portfolio-col{
+    margin-bottom: 10px
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .portfolio-img {
+    width: 150px; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+
+  .home-col, .portfolio-col{
+    margin: 10px
+  }
+
+  .home-item, .portfolio-col{
+    margin-bottom: 10px
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .portfolio-img {
+    width: 100px; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+
+  .home-col, .portfolio-col{
+    margin: 10px
+  }
+
+  .home-item, .portfolio-col{
     margin-bottom: 10px
   }
 }
@@ -103,7 +131,7 @@
     display: none; 
     position: fixed; 
     z-index: 100; 
-    padding-top: 1%; 
+    padding-top: 5rem; 
     left: 0;
     top: 0;
     width: 100%; 
@@ -114,14 +142,17 @@
   }
   
 
+
   .modal-content {
     border-radius: 1rem;
 
     position: relative;
+    color: black;
     background-color: #fefefe;
     margin: auto;
     padding: 0;
-    width: 50%;
+    width: 60%;
+
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;

@@ -44,8 +44,8 @@
 
 		// Title Bar.
 			$(
-				'<div id="titleBar">' +
-					'<a href="#navPanel" class="toggle"></a>' +
+				'<div id="titleBar" style="color: white" >' +
+					'<a href="#navPanel"  class="toggle"></a>' +
 					// '<span class="title">' + $('#logo').html() + '</span>' +
 					'<span class="title">' + 'Penn EduCare' + '</span>' +
 				'</div>'

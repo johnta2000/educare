@@ -42,7 +42,7 @@
   border: 2px solid #AED3FA;
   border-radius: 5px;
   padding: 1rem;
-  flex-basis: 400px;
+  flex-basis: 300px;
   margin: 1rem;
   display: flex; 
   flex-direction: column; 
@@ -51,6 +51,13 @@
 
 
 
+}
+
+@media screen and (max-width: 970px) {
+  .partner-container{
+    flex-basis: 250px;
+
+  }
 }
 
 .portfolio-img {
@@ -76,6 +83,11 @@ article{
 }
 
 @media screen and (max-width: 940px) {
+
+  .mission{
+    flex-direction: column;
+  }
+
   .portfolio-img {
     width: 200px; /* The width is 100%, when the viewport is 800px or smaller */
   }

@@ -385,3 +385,27 @@ article{
     0% {opacity:0;}
     100% {opacity:1;}
   }
+ 
+ 
+ #six > div > div {
+	 
+	 visibility: hidden;
+	 
+ }
+ 
+::-webkit-input-placeholder {
+   color:#d9d9d9 !important;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color:#d9d9d9 !important; 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color:#d9d9d9 !important; 
+}
+
+:-ms-input-placeholder {  
+   color:#d9d9d9 !important;
+}
+ 

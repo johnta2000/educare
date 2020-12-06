@@ -201,37 +201,42 @@
     </div>
 
 
+	<!-- Modal -->
+	<div id="myModal" class="modal">
 
-    <div id="myModal" class="modal">
+		<!-- Modal content -->
+		<div class="modal-content">
+			<div class="modal-header">
+				<span class="close">&times;</span>
+				<h2 id="modal-title" class="modal-text"></h2>
+			</div>
+			<div class="modal-body">
+				<div style="display: flex; flex-direction: row; flex-wrap: wrap;  justify-content: center; align-items: center;">
+					<img id="modal-image" class="modal-img" />
 
-            <!-- Modal content -->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <span class="close">&times;</span>
-                    <h2 id="modal-title" class="modal-text"></h2>
-                </div>
-                <div class="modal-body">
-                    <div style="display: flex; flex-direction: row; flex-wrap: wrap;  justify-content: center">
-                        <img id="modal-image" class="modal-img" />
-    
-                        <div style="display: flex; flex-direction: column;">
-                            <p style="width: 400px; max-width: 40vw; padding-left: 1rem;" class="modal-text" id="description-text">
-    
-                            </p>
-    
-                            <i style="width: 100%; padding-left: 1rem" class="modal-text" id="author-text">
-                            </i>
-                            <br />
-                            <p style="padding-left: 1rem"><img id="partner-logo" style="max-width: 70px; padding-left:.5rem; vertical-align: middle" />
-                                <span id="partner-name"></span></p>
-    
-                        </div>
-                    </div>
-                </div>
-    
-            </div>
-    
-        </div>
+					<div style="display: flex; flex-direction: column;">
+						<p style="width: 600px; max-width: 40vw; padding-left: 2rem;" class="modal-text" id="description-text">
+
+						</p>
+						<a target="_blank" id="instagram-link" class="icon brands alt fa-instagram" style="color: black; padding-left: 2rem;"><span
+							 class="label">Instagram</span> View on Instagram</a>
+
+						<div class="modalMetaBox">
+							<i class="modal-text" id="author-text">
+							</i>
+
+							<p><img id="partner-logo" style="max-width: 70px; padding-left:.5rem; vertical-align: middle" />
+								<span id="partner-name"></span></p>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
     
         <!-- Scripts -->
     

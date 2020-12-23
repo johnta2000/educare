@@ -13,6 +13,11 @@
 	<title>EduCare</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	 <meta name="keywords" content="EduCare, Philadelphia, UPenn, Pennsylvania, University of Pennsylvania, Health, Health Literacy">
+	 
+	 <meta name="description" content="Caring Through Patient Education"/>
+	
+	
 <meta name="google-site-verification" content="NXAVe5AOjYnYst7MnRyB0MbP15GU6fzYdz9HgnEkq9w" />
 	<link rel="stylesheet" href="assets/css/bios.css" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -30,6 +35,42 @@
 		gtag('js', new Date());
 
 		gtag('config', 'UA-131825248-2');
+	</script>
+	
+	<script>
+	var ImageMap;
+	
+	window.onload = function () {
+	console.log('Hi');
+    ImageMap = function (map, img) {
+            var n,
+                areas = map.getElementsByTagName('area'),
+                len = areas.length,
+                coords = [],
+                previousWidth = 3656;
+            for (n = 0; n < len; n++) {
+                coords[n] = areas[n].coords.split(',');
+            }
+            this.resize = function () {
+                var n, m, clen,
+                    x = img.offsetWidth / previousWidth;
+                for (n = 0; n < len; n++) {
+                    clen = coords[n].length;
+                    for (m = 0; m < clen; m++) {
+                        coords[n][m] *= x;
+                    }
+                    areas[n].coords = coords[n].join(',');
+                }
+                previousWidth = document.body.clientWidth;
+                return true;
+            };
+            window.onresize = this.resize;
+        },
+        imageMap = new ImageMap(document.getElementById('partner-map'), document.getElementById('partner-img'));
+    imageMap.resize();
+    return;
+}
+	
 	</script>
 
 	<noscript>
@@ -74,7 +115,7 @@
 
 				</header>
 
-				<span class="image"><img src="images/educarelogo.png" alt="" /></span>
+				<span class="image"><img src="images/educarelogo.png" alt="EduCare" /></span>
 
 
 			</div>
@@ -84,21 +125,14 @@
 		<!-- One -->
 		<section id="mission-statement" class="wrapper alt style2">
 		
-		    <div id="container" class="svg-container"></div>
-		    <script type="text/javascript">
-				var w = 1400;
-				var h = 700;
-				var svg = d3.select("div#container").append("svg").attr("preserveAspectRatio", "xMinYMin meet")
-				.attr("viewBox", "0 0 " + w + " " + h).style("background","#c9e8fd")
-				.classed("svg-content", true);
-				</script>
+
 			<div class="inner">
 				<h2 style="font-weight: 1000; ">Our Mission</h2>
 				
 				<p class="mission" style="display: flex; align-items:center">
 				
 				
-					<img style="width: 50%; min-width: 300px;" src="images\our_mission.png">
+					<img alt="" style="width: 50%; min-width: 300px;" src="images\our_mission.png">
         
 
 					<span class="paragraph-text">
@@ -135,14 +169,15 @@
 							'cu2d',
 							'https://www.instagram.com/p/CDwo8RPBx12/')">
 
-							<img src="./images/portfolio/1918Flu_1.jpg" class="portfolio-img">
+							<img alt="1918 Flu Graphic" src="./images/portfolio/1918Flu_1.jpg" class="portfolio-img">
 
 
 							</p>
 
 
 						</div>
-						<div class="home-item"> <img src="./images/portfolio/Type2Diabetes_1.png" class="portfolio-img" onclick="openModal('Type 2 Diabetes Pamphlet', 
+						<div class="home-item"> 
+						<img alt="Type 2 Diabetes Pamphlet" src="./images/portfolio/Type2Diabetes_1.png" class="portfolio-img" onclick="openModal('Type 2 Diabetes Pamphlet', 
 							'Anna Chen, W’23 C’23', 
 							'We developed a community-conscious resource that focuses on the risks and prevention of type 2 diabetes. This handout was attached to meals provided to homeless Philadelphians through UCHC’s weekly meal service.',
 							'./images/portfolio/Type2Diabetes_1.png',
@@ -155,7 +190,8 @@
 					<div style="display: flex; flex-direction: row;  justify-content: center">
 
 						<div class="home-col">
-							<div class="home-item"> <img src="./images/portfolio/WalletCard_1.png" class="portfolio-img" onclick="openModal('Wallet Card', 
+							<div class="home-item">
+							<img alt="Wallet Card" src="./images/portfolio/WalletCard_1.png" class="portfolio-img" onclick="openModal('Wallet Card', 
 								'Valerie Wang, W’24', 
 								'Many recently arrived immigrants are unaware of the explicit information needed to attend a physician visit in the US. Along with NSC, we created a wallet card that includes all the required information.',
 								'./images/portfolio/WalletCard_1.png', 'nsc')
@@ -168,7 +204,7 @@
 								'./images/portfolio/HealthCovid_1.png',
 							'uchc')">
 
-								<img src="./images/portfolio/HealthCovid_1.png" class="portfolio-img">
+								<img alt="Health & COVID" src="./images/portfolio/HealthCovid_1.png" class="portfolio-img">
 
 
 								</p>
@@ -193,14 +229,15 @@
 							'cu2d',
 							'https://www.instagram.com/p/CCGwbOBh8Xh/')">
 
-								<img src="./images/portfolio/SelfIsolation_1.jpg" class="portfolio-img">
+								<img alt="Shared Households During COVID-19" src="./images/portfolio/SelfIsolation_1.jpg" class="portfolio-img">
 
 
 								</p>
 
 
 							</div>
-							<div class="home-item"> <img src="./images/portfolio/PregnancyCovid_1.jpg" class="portfolio-img" onclick="openModal('Pregnancy During the Time of COVID-19', 
+							<div class="home-item"> 
+							<img alt="Pregnancy & COVID-19" src="./images/portfolio/PregnancyCovid_1.jpg" class="portfolio-img" onclick="openModal('Pregnancy During the Time of COVID-19', 
 								'Brandon Wisnicki, SEAS’24', 
 								'For many expecting mothers, navigating a pregnancy during COVID-19 may be confusing or challenging with so much information on the internet. With Johns Hopkins medical students @covidup2date, we created a resource that touches on important pregnancy topics, such as the importance of continued prenatal visits. ',
 								'./images/portfolio/PregnancyCovid_1.jpg',
@@ -243,31 +280,45 @@
 					<script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (a) { if (void 0 !== a.data["datawrapper-height"]) for (var e in a.data["datawrapper-height"]) { var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']"); t && (t.style.height = a.data["datawrapper-height"][e] + "px") } })) }();
 					</script> -->
 					
-					<img style="width: 45%" src="images/philly.png" />
+					<img alt="Map of Philadelphia and Partners" style="width: 40%" id="partner-img" usemap="#partnermap" src="images/philly.png" />
+				
+
+				<map name="partnermap" id="partner-map" >
+    <area target="_blank" alt="Convenant House" title="Convenant House" href="https://www.covenanthouse.org/" shape="poly" coords="1093,2051,1168,1867,1206,1867,1261,1851,1297,1809,1316,1750,1313,1679,1297,1637,1261,1602,1213,1582,980,1586,929,1602,893,1634,877,1686,880,1763,896,1818,961,1867,1019,1867" >
+    <area target="_blank" alt="Prevention Point" title="Prevention Point" href="https://ppponline.org/" coords="1839,2083,1923,1902,1981,1905,2036,1886,2078,1838,2091,1789,2088,1712,2065,1660,2030,1631,1978,1618,1691,1618,1636,1644,1607,1683,1591,1725,1587,1809,1610,1854,1652,1892,1700,1899,1749,1899" shape="poly">
+    <area target="_blank" alt="DBHIDS" title="DBHIDS" href="https://dbhids.org/" coords="2191,2390,2282,2209,2363,2209,2404,2196,2443,2173,2459,2131,2472,2089,2469,2022,2446,1970,2392,1931,2353,1922,2017,1922,1988,1931,1952,1964,1930,1989,1914,2028,1910,2099,1923,2148,1959,2177,2010,2206,2094,2203" shape="poly">
+    <area target="_blank" alt="United Community Clinic" title="United Community Clinic" href="https://www.unitedcommunityclinic.com/" coords="1397,2341,1471,2164,1539,2148,1591,2106,1613,2031,1604,1951,1562,1899,1513,1880,1284,1876,1232,1896,1197,1928,1177,1973,1174,2054,1197,2115,1245,2148,1313,2167" shape="poly">
+    <area target="_blank" alt="Nationalities Service Center" title="Nationalities Service Center" href="https://nscphila.org/" coords="1736,2609,1810,2438,1865,2435,1904,2412,1927,2383,1956,2354,1959,2280,1946,2222,1917,2183,1875,2154,1839,2148,1633,2154,1591,2164,1555,2190,1526,2219,1520,2267,1523,2354,1562,2409,1607,2429,1665,2438" shape="poly">
+    <area target="_blank" alt="Department of Family Medicine &amp; Community Health" title="Department of Family Medicine &amp; Community Health" href="https://www.cceb.med.upenn.edu/bio/frances-k-barg-phd-med" coords="1058,2742,1158,2567,1219,2571,1281,2545,1319,2509,1332,2458,1332,2383,1316,2338,1290,2306,1245,2286,903,2283,854,2296,819,2328,796,2364,783,2448,793,2500,832,2551,893,2567,967,2574" shape="poly">
+    <area target="_blank" alt="UCHC" title="UCHC" href="https://www.uchcphiladelphia.org/" coords="1384,3074,1458,2900,1494,2890,1539,2877,1581,2842,1604,2806,1604,2739,1600,2700,1574,2658,1532,2626,1500,2616,1281,2616,1232,2629,1203,2648,1180,2680,1168,2710,1168,2735,1168,2784,1177,2829,1213,2877,1264,2894,1306,2897" shape="poly">
+    <area target="_blank" alt="Pennsylvania Health Literacy Coalition" title="Pennsylvania Health Literacy Coalition" href="https://healthliteracypa.org/" coords="1675,3485,1771,3310,1810,3310,1865,3301,1907,3281,1933,3242,1949,3188,1943,3110,1927,3068,1888,3036,1855,3020,1820,3020,1503,3020,1461,3045,1426,3084,1400,3133,1403,3181,1410,3226,1436,3265,1474,3294,1516,3304,1578,3307" shape="poly">
+    <area target="_blank" alt="Philabundance" title="Philabundance" href="https://www.philabundance.org/" coords="1394,3827,1465,3643,1500,3643,1545,3627,1584,3601,1604,3549,1610,3456,1587,3420,1545,3368,1494,3355,1287,3359,1245,3375,1200,3394,1187,3436,1174,3472,1177,3536,1187,3585,1222,3620,1271,3636,1323,3653" shape="poly">
+</map>
+					
 				</div>
 
 				<div style="display: flex; flex-wrap: wrap; align-items: stretch; justify-content: center;">
 
 			<div class="partner-container">
 						<img style="align-self: center; width: 200px; vertical-align: text-top" class="imagea" src="images/logos/covhouse.jpg"
-						 alt="" />
+						 alt="Covenant House Pennsylvania Logo" />
 					 <a href="https://www.covenanthouse.org/"> <b>Covenant House Pennsylvania</b> </a>
 					</div>
 					
 						<div class="partner-container">
 						<img style="align-self: center; width: 200px; vertical-align: text-top" class="imagea" src="images/logos/dbhids.jpg"
-						 alt="" />
+						 alt="Philadelphia Department of Behavioral Health and Intellectual Disability Services Logo" />
 					 <a href="https://dbhids.org/"> <b>Philadelphia Department of Behavioral Health and Intellectual Disability Services</b> </a>
 					</div>
 
 					
 										<div class="partner-container">
 						<img style="align-self: center; width: 200px; vertical-align: text-top" class="imagea" src="images/logos/Prevention_Point.png"
-						 alt="" />
+						 alt="Prevention Point Logo" />
 					 <a href="https://ppponline.org/"> <b>Prevention Point</b> </a>
 					</div>
 							<div class="partner-container">
-						<img style="align-self: center;width: 100px; vertical-align: text-top" class="imagea" src="images/nsc.png" alt="" />
+						<img style="align-self: center;width: 100px; vertical-align: text-top" class="imagea" src="images/nsc.png" alt="Nationalities Service Center Logo" />
 						<a href="https://nscphila.org"> <b>Nationalities Service Center</b> </a>
 
 
@@ -275,20 +326,20 @@
 					
 						<div class="partner-container">
 						<img style="align-self: center; width: 200px; vertical-align: text-top" class="imagea" src="images/logos/philabundance.jpg"
-						 alt="" />
+						 alt="Philabundance Logo" />
 					 <a href="https://www.philabundance.org/"> <b>Philabundance</b> </a>
 					</div>
 					
 						<div class="partner-container">
 						<img style="align-self: center; width: 200px; vertical-align: text-top" class="imagea" src="images/logos/phlc.png"
-						 alt="" />
+						 alt="Pennsylvania Health Literacy Coalition Logo" />
 						<a href="https://healthliteracypa.org/"> <b>Pennsylvania Health Literacy Coalition</b> </a>
 					</div>
 					
 
 						<div class="partner-container">
 						<img style="align-self: center; width: 200px; vertical-align: text-top" class="imagea" src="images/logos/ucc.jpg"
-						 alt="" />
+						 alt="United Community Clinic Logo" />
 					 <a href="https://www.unitedcommunityclinic.com/"> <b>United Community Clinic</b> </a>
 					</div>
 			
@@ -297,7 +348,7 @@
 					 <a href="https://www.med.upenn.edu/globalhealth/refugee-clinic.html"> <b>Refugee Women’s Clinic</b> </a>
 					</div>
 					<div class="partner-container">
-						<img style="align-self: center;width: 100px; vertical-align: text-top" class="imagea" src="images/uchc2.png" alt="" />
+						<img style="align-self: center;width: 100px; vertical-align: text-top" class="imagea" src="images/uchc2.png" alt="University City Hospitality Coalition Logo" />
 						<a href="https://www.uchcphiladelphia.org/"> <b>University City Hospitality Coalition</b> </a>
 
 
@@ -312,7 +363,7 @@
 
 					<div class="partner-container">
 						<img style="align-self:center; max-width: 200px; vertical-align: text-top" class="imagea" src="images/barg.png"
-						 alt="" />
+						 alt="Laboratory of Dr. Frances K. Barg Logo" />
 						<a href="https://www.cceb.med.upenn.edu/bio/frances-k-barg-phd-med/"> <b>Laboratory of Dr. Frances K. Barg</b> </a>
 
 
@@ -325,7 +376,7 @@
 					
 						<div class="partner-container">
 						<img style="align-self: center; width: 100px; vertical-align: text-top" class="imagea" src="images/covidup2date.png"
-						 alt="" />
+						 alt="@covidup2date Logo" />
 						<a href="https://www.instagram.com/covidup2date/?hl=en"> <b>@covidup2date</b> </a>
 					</div>
 				
@@ -336,25 +387,25 @@
 
 	<div class="partner-container">
 						<img style="align-self: center; width: 200px; vertical-align: text-top" class="imagea" src="images/logos/Mack_Institute.png"
-						 alt="" />
+						 alt="Mack Institute Logo" />
 						<!-- Link --> <a href="https://mackinstitute.wharton.upenn.edu/"> <b>Mack Institute</b> </a>
 					</div>
 					
 						<div class="partner-container">
 						<img style="align-self: center; width: 200px; vertical-align: text-top" class="imagea" src="images/logos/pm_cares.jpg"
-						 alt="" />
+						 alt="Penn Medicine CAREs Grant Logo" />
 						<!-- Link --> <a href="https://www.pennmedicine.org/about/serving-our-community"> <b>Penn Medicine CAREs Grant</b> </a>
 					</div>
 					
 					<div class="partner-container">
 						<img style="align-self: center; width: 200px; vertical-align: text-top" class="imagea" src="images/logos/innofund.png"
-						 alt="" />
+						 alt="Innovation Fund Implementation Award - Venture Lab Logo" />
 						<!-- Link --> <a href="https://entrepreneurship.wharton.upenn.edu/innovation-fund/"> <b>Innovation Fund Implementation Award - Venture Lab</b> </a>
 					</div>
 					
 										<div class="partner-container">
 						<img style="align-self: center; width: 200px; vertical-align: text-top" class="imagea" src="images/logos/notability.jpg"
-						 alt="" />
+						 alt="Notability Logo" />
 						<!-- Link --> <a href="https://www.gingerlabs.com/"> <b>Notability by Ginger Labs</b> </a>
 					</div>
 </div>
@@ -376,7 +427,7 @@
 
 				<section class="features">
 					<article>
-						<img class="imagea" src="images/joshkim123.png" alt="" />
+						<img class="imagea" src="images/joshkim123.png" alt="Joshua Kim Headshot" />
 
 						<h3 style="font-weight: 1000">
 							Joshua Kim
@@ -390,7 +441,7 @@
 					</article>
 
 					<article>
-						<img class="imagea" src="images/annieluo123.jpeg" alt="" />
+						<img class="imagea" src="images/annieluo123.jpeg" alt="Annie Luo Headshot" />
 
 						<h3 style="font-weight: 1000" id="muli-font">
 							Annie Luo
@@ -405,7 +456,7 @@
 					</article>
 
 					<article>
-						<img class="imagea" src="images/profiles/John_Ta.jpg" alt="" />
+						<img class="imagea" src="images/profiles/John_Ta.jpg" alt="John Ta Headshot" />
 
 						<h3 style="font-weight: 1000" id="muli-font">
 							John Ta
@@ -422,7 +473,7 @@
 
 
 					<article>
-						<img class="imagea" src="images/profiles/Vickie_Hua.jpg" alt="" />
+						<img class="imagea" src="images/profiles/Vickie_Hua.jpg" alt="Vickie Hua Headshot" />
 
 						<h3 style="font-weight: 1000" id="muli-font">
 							Vickie Hua
@@ -437,7 +488,7 @@
 					</article>
 
 					<article>
-						<img class="imagea" src="images/profiles/Anna_Chen.jpg" alt="" />
+						<img class="imagea" src="images/profiles/Anna_Chen.jpg" alt="Anna Chen Headshot" />
 
 						<h3 style="font-weight: 1000" id="muli-font">
 							Anna Chen
@@ -485,7 +536,7 @@
 
 					<h2 style="font-weight: 1000" id="muli-font">Interested in joining our team?</h2>
 
-					<img src="images\join_team.png" style="width: 35%;min-width: 300px;">
+					<img alt="" src="images\join_team.png" style="width: 35%;min-width: 300px;">
 
 					<p class="paragraph-text"> We're actively recruiting graphic designers and translators for the fall 2020 semester.
 						<br /><br />
@@ -553,7 +604,7 @@
 			</div>
 			<div class="modal-body">
 				<div style="display: flex; flex-direction: row; flex-wrap: wrap;  justify-content: center; align-items: center;">
-					<img id="modal-image" class="modal-img" />
+					<img alt="Graphic" id="modal-image" class="modal-img" />
 
 					<div style="display: flex; flex-direction: column;">
 						<p style="width: 600px; max-width: 40vw; padding-left: 2rem;" class="modal-text" id="description-text">
@@ -566,7 +617,7 @@
 							<i class="modal-text" id="author-text">
 							</i>
 
-							<p><img id="partner-logo" style="max-width: 70px; padding-left:.5rem; vertical-align: middle" />
+							<p><img alt="Partner Logo" id="partner-logo" style="max-width: 70px; padding-left:.5rem; vertical-align: middle" />
 								<span id="partner-name"></span></p>
 						</div>
 

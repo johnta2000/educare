@@ -71,7 +71,7 @@
     
             </header>
             <!-- Top Banner -->
-            <!-- i apologize in advanced for the spaghetti code lol, i'll pretty it up once we get this more finalized -->
+       
             <section id="banner">
 
                 <div class="content">
@@ -96,11 +96,11 @@
                 
                 
                                         </div>
-                                        <div class="home-item"> <img src="./images/portfolio/Type2Diabetes_1.png" class="portfolio-img" onclick="openModal('Type 2 Diabetes Pamphlet', 
-                                            'Anna Chen, W’23 C’23', 
-                                            'We developed a community-conscious resource that focuses on the risks and prevention of type 2 diabetes. This handout was attached to meals provided to homeless Philadelphians through UCHC’s weekly meal service.',
-                                            './images/portfolio/Type2Diabetes_1.png',
-                                            'uchc')">
+                                        <div class="home-item"> <img src="./images/portfolio/mask_safely.png" class="portfolio-img" onclick="openModal('How to Wear a Mask Safely', 
+                                            'Cynthia Zhou, C’23', 
+                                            'We developed a resource on the best practices for mask safety. This handout was given out to vulnerable Philadelphian populations during COVID-19 flu vaccine drives run by Penn Medicine.',
+                                            './images/portfolio/mask_safely.png',
+                                            'ucc')">
                 
                                         </div>
                 
@@ -154,12 +154,11 @@
                 
                 
                                             </div>
-                                            <div class="home-item"> <img src="./images/portfolio/PregnancyCovid_1.jpg" class="portfolio-img" onclick="openModal('Pregnancy During the Time of COVID-19', 
-                                                'Brandon Wisnicki, SEAS’24', 
-                                                'For many expecting mothers, navigating a pregnancy during COVID-19 may be confusing or challenging with so much information on the internet. With Johns Hopkins medical students @covidup2date, we created a resource that touches on important pregnancy topics, such as the importance of continued prenatal visits. ',
-                                                './images/portfolio/PregnancyCovid_1.jpg',
-                                            'cu2d',
-                                            'https://www.instagram.com/p/CC3xFcxhiG8/')">
+                                            <div class="home-item"> <img src="./images/portfolio/protectyourselfandothers.png" class="portfolio-img" onclick="openModal('How to Protect Yourself and Others', 
+                                                'Myahn Walker, C’22', 
+                                                'We developed a resource on important measures to protect yourselves and others during the COVID-19 pandemic. This handout was given out to vulnerable Philadelphian populations during COVID-19 flu vaccine drives run by Penn Medicine.',
+                                                './images/portfolio/protectyourselfandothers.png',
+                                            'ucc')">
                 
                                             </div>
                 
@@ -264,7 +263,8 @@
         
                     nsc: 'images/nsc.png',
                     cu2d: 'images/covidup2date.png',
-                    uchc: 'images/uchc2.png'
+                    uchc: 'images/uchc2.png',
+					ucc: 'images/logos/ucc.jpg'
         
                 };
         
@@ -290,6 +290,10 @@
                             return '@CovidUp2Date'
                         case 'uchc':
                             return 'University City Hospitality Coalition'
+						case 'ucc':
+							return 'United Health Clinic'
+						default:
+							return 'an Organization'
                     }
                 }
         

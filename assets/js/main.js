@@ -47,7 +47,7 @@
 				'<div id="titleBar" style="color: white" >' +
 					'<a href="#navPanel"  class="toggle"></a>' +
 					// '<span class="title">' + $('#logo').html() + '</span>' +
-					'<span class="title">' + 'Penn EduCare' + '</span>' +
+					'<span class="title">' + 'EduCare' + '</span>' +
 				'</div>'
 			)
 				.appendTo($body);

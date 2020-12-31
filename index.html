@@ -72,6 +72,8 @@
 }
 	
 	</script>
+	
+
 
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -105,6 +107,9 @@
 
 		</header>
 
+	<a href="apply.html">	<div id="notification">
+		We're recruiting! Click here to apply.
+		</div> </a>
 
 		<!-- Top Banner -->
 		<section id="banner">
@@ -510,12 +515,11 @@
 
 					<img alt="" src="images\join_team.png" style="width: 35%;min-width: 300px;">
 
-					<p class="paragraph-text"> We're actively recruiting graphic designers and translators for the fall 2020 semester.
+					<p class="paragraph-text"> We're actively recruiting for our Research, Design, and Strategic Finance Teams. 
 						<br /><br />
 
 						<b>
-							Interested in
-							joining the team? </b>
+							Interested in Joining? </b>
 					</p>
 
 					<a href="apply.html" class="button">Apply Now!</a>
@@ -691,7 +695,15 @@
                 }
         
             </script>
-
+			
+	<script>
+	//Notification popup script
+	 setTimeout(function(){ 
+		 document.getElementById('notification').style.top = '5rem';
+	 	 document.getElementById('notification').style.opacity = '1';
+	 }, 750);
+	</script>
+	
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.scrolly.min.js"></script>
 	<script src="assets/js/jquery.dropotron.min.js"></script>

@@ -698,10 +698,17 @@
 			
 	<script>
 	//Notification popup script
-	 setTimeout(function(){ 
+	window.addEventListener('load', 
+	  function() { 
+		setTimeout(function(){ 
 		 document.getElementById('notification').style.top = '5rem';
 	 	 document.getElementById('notification').style.opacity = '1';
-	 }, 750);
+	 }, 500);
+		
+		
+		
+	  }, false);
+
 	</script>
 	
 	<script src="assets/js/jquery.min.js"></script>

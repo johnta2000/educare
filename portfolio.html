@@ -229,7 +229,7 @@
 							<i class="modal-text" id="author-text">
 							</i>
 
-							<p><img id="partner-logo" style="max-width: 70px; padding-left:.5rem; vertical-align: middle" />
+							<p>
 								<span id="partner-name"></span></p>
 						</div>
 
@@ -248,7 +248,6 @@
         <script>
                 var modal = document.getElementById("myModal");
         
-                var partnerLogo = document.getElementById('partner-logo');
                 var partnerName = document.getElementById('partner-name');
         
                 var title = document.getElementById("modal-title");
@@ -318,7 +317,6 @@
                     
                     modal.style.display = "block";
         
-                    partnerLogo.src = partners[partner];
                     partnerName.textContent = "In Partnership with " + getPartnerName(partner);
                 }
         

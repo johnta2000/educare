@@ -22,10 +22,16 @@
 	<link rel="stylesheet" href="assets/css/bios.css" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="assets/css/custom.css" />
+	<link rel="stylesheet" href="assets/css/flickity.min.css" media="screen">
+	<script src="assets/js/flickity.pkgd.min.js"></script>
+
 
 	<!-- 32x32 & 16x16 favicon support -->
 	<link rel="icon" type="image/png" href="favicon32.png" sizes="32x32" />
 	<link rel="icon" type="image/png" href="favicon16.png" sizes="16x16" />
+
+
+	
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131825248-2"></script>
@@ -36,6 +42,7 @@
 
 		gtag('config', 'UA-131825248-2');
 	</script>
+	
 	
 	<script>
 	var ImageMap;
@@ -116,8 +123,9 @@
 			<div class="content" >
 			
 
-				<img style="max-width: 70vw" src="images/neweducarelogo.png" alt="EduCare" />
+				<img class="desktop-logo" style="max-width: 70vw" src="images/neweducarelogo.png" alt="EduCare" />
 
+<img class="mobile-logo" style="max-width: 70vw" src="images/icon.png" alt="EduCare" />
 
 			</div>
 			<a href="#mission-statement" class="goto-next">Next</a>
@@ -140,6 +148,36 @@
 						EduCare is a nonprofit creating cutting-edge health resources for vulnerable Philadelphian communities. We are looking to develop a novel model of patient-centered education, where patients’ understanding of medical content is the sole driver of our writing, translation, and creative design decisions. </span>
 
 				</p>
+
+			</div>
+		</section>
+		
+				<!-- One -->
+		<section id="impact" class="wrapper alt style2">
+		
+
+			<div class="inner">
+				<h2 style="font-weight: 1000; ">Our Impact</h2>
+				
+				<div class="mission" style="display: flex; align-items:center; width: 100%; justify-content: space-around">
+				
+				<div style="margin-bottom: 1rem;  border: 2px solid #AED3FA;border-radius: 5px; padding: 1rem; "> 
+				<h1 class='numscroller' data-min='1' data-max='40' data-delay='1' data-increment='1'>40</h1>
+				<p>Completed Projects </p>
+				</div>
+				
+				<div style=" margin-bottom: 1rem; border: 2px solid #AED3FA;border-radius: 5px; padding: 1rem; "> 
+				<h1 class='numscroller' data-min='1' data-max='9' data-delay='1.25' data-increment='1'>9</h1>
+				<p>Philadelphia Healthcare Partners </p>
+				</div>
+				
+				<div style=" margin-bottom: 1rem; border: 2px solid #AED3FA;border-radius: 5px; padding: 1rem; "> 
+				<h1><span class='numscroller' data-min='1' data-max='18' data-delay='1.5' data-increment='1'>18</span>k</h1>
+				<p>Healthcare Patients Served</p>
+				</div>
+				
+				
+				</div>
 
 			</div>
 		</section>
@@ -290,91 +328,93 @@
 					
 				</div>
 
-				<div style="display: flex; flex-wrap: wrap; align-items: stretch; justify-content: center;">
-
-			<div class="partner-container">
-						<img style="align-self: center; width: 200px; vertical-align: text-top" class="imagea" src="images/logos/covhouse.jpg"
-						 alt="Covenant House Pennsylvania Logo" />
-					 <a href="https://www.covenanthouse.org/"> <b>Covenant House Pennsylvania</b> </a>
+<div class="main-carousel" data-flickity='{ "cellAlign": "center", "contain": true,  "autoPlay": 2000 ,  "wrapAround": true, "pageDots": false, "pauseAutoPlayOnHover": false   }'>
+					<div class="carousel-cell">
+						<a href="https://www.covenanthouse.org/"><img style="align-self: center; width: 200px; vertical-align: text-top" class="imagea" src="images/logos/covhouse.jpg"
+						 alt="Covenant House Pennsylvania Logo" /> </a>
 					</div>
-					
-						<div class="partner-container">
-						<img style="align-self: center; width: 200px; vertical-align: text-top" class="imagea" src="images/logos/dbhids.jpg"
+					<div class="carousel-cell">
+						<a href="https://dbhids.org/"><img style="align-self: center; vertical-align: text-top" class="imagea" src="images/logos/dbhids.jpg"
 						 alt="Philadelphia Department of Behavioral Health and Intellectual Disability Services Logo" />
-					 <a href="https://dbhids.org/"> <b>Philadelphia Department of Behavioral Health and Intellectual Disability Services</b> </a>
-					</div>
-
+					  </a>
 					
-										<div class="partner-container">
-						<img style="align-self: center; width: 200px; vertical-align: text-top" class="imagea" src="images/logos/Prevention_Point.png"
+					</div>
+  <div class="carousel-cell">
+						 <a href="https://ppponline.org/"><img style="align-self: center; vertical-align: text-top" class="imagea" src="images/logos/Prevention_Point.png"
 						 alt="Prevention Point Logo" />
-					 <a href="https://ppponline.org/"> <b>Prevention Point</b> </a>
-					</div>
-							<div class="partner-container">
-						<img style="align-self: center;width: 100px; vertical-align: text-top" class="imagea" src="images/nsc.png" alt="Nationalities Service Center Logo" />
-						<a href="https://nscphila.org"> <b>Nationalities Service Center</b> </a>
+					  </a>
+  </div>
+  
+    <div class="carousel-cell">
+						<a href="https://nscphila.org"><img style="align-self: center; vertical-align: text-top" class="imagea" src="images/nsc.png" alt="Nationalities Service Center Logo" />
+						  </a>
 
 
-					</div>
-					
-						<div class="partner-container">
-						<img style="align-self: center; width: 200px; vertical-align: text-top" class="imagea" src="images/logos/philabundance.jpg"
+  </div>
+  
+    <div class="carousel-cell">
+						 <a href="https://www.philabundance.org/"> <img style="align-self: center; vertical-align: text-top" class="imagea" src="images/logos/philabundance.jpg"
 						 alt="Philabundance Logo" />
-					 <a href="https://www.philabundance.org/"> <b>Philabundance</b> </a>
-					</div>
+					 </a>
 					
-						<div class="partner-container">
-						<img style="align-self: center; width: 200px; vertical-align: text-top" class="imagea" src="images/logos/phlc.png"
+  </div>
+  
+    <div class="carousel-cell">
+						<a href="https://healthliteracypa.org/"> <img style="align-self: center;  vertical-align: text-top" class="imagea" src="images/logos/phlc.png"
 						 alt="Pennsylvania Health Literacy Coalition Logo" />
-						<a href="https://healthliteracypa.org/"> <b>Pennsylvania Health Literacy Coalition</b> </a>
-					</div>
-					
-
-						<div class="partner-container">
-						<img style="align-self: center; width: 200px; vertical-align: text-top" class="imagea" src="images/logos/ucc.jpg"
+						 </a>
+  </div>
+  
+    <div class="carousel-cell">
+						<a href="https://www.unitedcommunityclinic.com/"> <img style="align-self: center;  vertical-align: text-top" class="imagea" src="images/logos/ucc.jpg"
 						 alt="United Community Clinic Logo" />
-					 <a href="https://www.unitedcommunityclinic.com/"> <b>United Community Clinic</b> </a>
-					</div>
-			
-						<div class="partner-container">
-							<img style="align-self: center; width: 200px; vertical-align: text-top" class="imagea" src="images/logos/womenrefugeeclinic.png"
+					  </a>
+  </div>
+  
+    <div class="carousel-cell">
+						<a href="https://www.med.upenn.edu/globalhealth/refugee-clinic.html">	<img style="align-self: center;  vertical-align: text-top" class="imagea" src="images/logos/womenrefugeeclinic.png"
 						 alt="Refugee Women’s Clinic Logo" />
-					 <a href="https://www.med.upenn.edu/globalhealth/refugee-clinic.html"> <b>Refugee Women’s Clinic</b> </a>
-					</div>
-					<div class="partner-container">
-						<img style="align-self: center;width: 100px; vertical-align: text-top" class="imagea" src="images/uchc2.png" alt="University City Hospitality Coalition Logo" />
-						<a href="https://www.uchcphiladelphia.org/"> <b>University City Hospitality Coalition</b> </a>
+					  </a>
+  </div>
+  
+    <div class="carousel-cell">
+						<a href="https://www.uchcphiladelphia.org/"><img style="align-self: center;vertical-align: text-top" class="imagea" src="images/uchc2.png" alt="University City Hospitality Coalition Logo" />
+						  </a>
 
 
-					</div>
-
-	<div class="partner-container">
-							<img style="align-self: center; width: 200px; vertical-align: text-top" class="imagea" src="images/logos/heartbridge.png"
+  </div>
+  
+    <div class="carousel-cell">
+						 <a href="https://www.med.upenn.edu/diversityume/studentledclinics.html"> 	<img style="align-self: center; vertical-align: text-top" class="imagea" src="images/logos/heartbridge.png"
 						 alt="Heart Bridge To Care Logo" />
-					 <a href="https://www.med.upenn.edu/diversityume/studentledclinics.html"> <b>Heart Health Bridge to Care Clinic</b> </a>
-					</div>
-
-
-
-					<div class="partner-container">
-						<img style="align-self:center; max-width: 200px; vertical-align: text-top" class="imagea" src="images/barg.png"
+					 </a>
+  </div>
+      <div class="carousel-cell">
+						<a href="https://www.cceb.med.upenn.edu/bio/frances-k-barg-phd-med/"><img style="align-self:center;  vertical-align: text-top" class="imagea" src="images/barg.png"
 						 alt="Laboratory of Dr. Frances K. Barg Logo" />
-						<a href="https://www.cceb.med.upenn.edu/bio/frances-k-barg-phd-med/"> <b>Laboratory of Dr. Frances K. Barg</b> </a>
+						  </a>
 
 
-					</div>
-					
-						<div class="partner-container">
-						<img style="align-self: center; width: 200px; vertical-align: text-top" class="imagea" src="images/logos/uhc.png"
+  </div>
+  
+   <div class="carousel-cell">
+						<a href="https://www.rightsofthepoor.org/unity-clinic"> <img style="align-self: center;  vertical-align: text-top" class="imagea" src="images/logos/uhc.png"
 						 alt="Unity Health Clinic Logo" />
-					 <a href="https://www.rightsofthepoor.org/unity-clinic"> <b>Unity Health Clinic</b> </a>
-					</div>
-					
-						<div class="partner-container">
-						<img style="align-self: center; width: 100px; vertical-align: text-top" class="imagea" src="images/covidup2date.png"
+					  </a>
+  </div>
+  
+   <div class="carousel-cell">
+						<a href="https://www.instagram.com/covidup2date/?hl=en"><img style="align-self: center; vertical-align: text-top" class="imagea" src="images/covidup2date.png"
 						 alt="@covidup2date Logo" />
-						<a href="https://www.instagram.com/covidup2date/?hl=en"> <b>@covidup2date</b> </a>
-					</div>
+						</a>
+  </div>
+
+  
+</div>
+
+
+				<div style="display: flex; flex-wrap: wrap; align-items: stretch; justify-content: center;">
+			
 				
 				</div>
 				
@@ -382,27 +422,33 @@
 											<div style="display: flex; flex-wrap: wrap; align-items: stretch; justify-content: center; ">
 
 	<div class="partner-container">
-						<img style="align-self: center; width: 200px; vertical-align: text-top" class="imagea" src="images/logos/Mack_Institute.png"
+						<a href="https://mackinstitute.wharton.upenn.edu/"><img style="align-self: center; width: 200px; vertical-align: text-top" class="imagea" src="images/logos/Mack_Institute.png"
 						 alt="Mack Institute Logo" />
-						<!-- Link --> <a href="https://mackinstitute.wharton.upenn.edu/"> <b>Mack Institute</b> </a>
+						<!-- Link --> </a>
 					</div>
 					
 						<div class="partner-container">
-						<img style="align-self: center; width: 200px; vertical-align: text-top" class="imagea" src="images/logos/pm_cares.jpg"
+						 <a href="https://www.pennmedicine.org/about/serving-our-community"><img style="align-self: center; width: 200px; vertical-align: text-top" class="imagea" src="images/logos/pm_cares.jpg"
 						 alt="Penn Medicine CAREs Grant Logo" />
-						<!-- Link --> <a href="https://www.pennmedicine.org/about/serving-our-community"> <b>Penn Medicine CAREs Grant</b> </a>
+						<!-- Link -->  </a>
 					</div>
 					
 					<div class="partner-container">
-						<img style="align-self: center; width: 200px; vertical-align: text-top" class="imagea" src="images/logos/innofund.png"
+						<a href="https://entrepreneurship.wharton.upenn.edu/innovation-fund/"> <img style="align-self: center; width: 200px; vertical-align: text-top" class="imagea" src="images/logos/innofund.png"
 						 alt="Innovation Fund Implementation Award - Venture Lab Logo" />
-						<!-- Link --> <a href="https://entrepreneurship.wharton.upenn.edu/innovation-fund/"> <b>Innovation Fund Implementation Award - Venture Lab</b> </a>
+						<!-- Link --> </a>
 					</div>
 					
 										<div class="partner-container">
-						<img style="align-self: center; width: 200px; vertical-align: text-top" class="imagea" src="images/logos/notability.jpg"
+						<a href="https://www.gingerlabs.com/"><img style="align-self: center; width: 200px; vertical-align: text-top" class="imagea" src="images/logos/notability.jpg"
 						 alt="Notability Logo" />
-						<!-- Link --> <a href="https://www.gingerlabs.com/"> <b>Notability by Ginger Labs</b> </a>
+						<!-- Link -->  </a>
+					</div>
+					
+					<div class="partner-container">
+						<a href="https://www.gingerlabs.com/"><img style="align-self: center; width: 200px; vertical-align: text-top" class="imagea" src="images/logos/asana.png"
+						 alt="Asana Logo" />
+						<!-- Link -->  </a>
 					</div>
 </div>
 			</div>
@@ -593,7 +639,7 @@
 							<i class="modal-text" id="author-text">
 							</i>
 
-							<p><img alt="" id="partner-logo" style="max-width: 70px; padding-left:.5rem; vertical-align: middle" />
+							<p>
 								<span id="partner-name"></span></p>
 						</div>
 
@@ -614,7 +660,6 @@
         <script>
                 var modal = document.getElementById("myModal");
         
-                var partnerLogo = document.getElementById('partner-logo');
                 var partnerName = document.getElementById('partner-name');
         
                 var title = document.getElementById("modal-title");
@@ -684,7 +729,6 @@
                     
                     modal.style.display = "block";
         
-                    partnerLogo.src = partners[partner];
                     partnerName.textContent = "In Partnership with " + getPartnerName(partner);
                 }
         
@@ -712,6 +756,7 @@
 	</script>
 	
 	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.numscroller-1.0.js"></script>
 	<script src="assets/js/jquery.scrolly.min.js"></script>
 	<script src="assets/js/jquery.dropotron.min.js"></script>
 	<script src="assets/js/jquery.scrollex.min.js"></script>
